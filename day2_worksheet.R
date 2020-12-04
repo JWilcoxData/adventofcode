@@ -8,5 +8,7 @@ data <- read.csv(file = "../adventofcode/day2_data.csv",
 data <- data %>%
     mutate(
         V2 = str_remove(V2, "[:]"),
+        V4 = str_count(V3, V2)
+        
         
     )
